@@ -10,4 +10,7 @@
   <ViewUsage
     Name="UserInformationView1"
     ViewObjectName="model.view.UserInformationView"/>
+  <ViewUsage
+    Name="FilesView1"
+    ViewObjectName="model.view.FilesView"/>
 </AppModule>

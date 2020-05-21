@@ -59,6 +59,81 @@
       <property
          name="fromOutcome">index</property>
       <property
-         name="sdm:polyPoints">L55,302.0556,382.04688,117.5,378.57812,R50</property>
+         name="sdm:polyPoints">L55,302.05585,382.04688,117.5,378.57812,R50</property>
+   </ControlFlowCase>
+   <View
+      id="View7">
+      <property
+         name="activityId">fileList</property>
+      <property
+         name="page">/fileList.jsf</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>fileList&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">230.53125</property>
+      <property
+         name="x">329.5</property>
+   </View>
+   <View
+      id="View8">
+      <property
+         name="activityId">fileLoad</property>
+      <property
+         name="page">/fileLoad.jsf</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>fileLoad&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">232.5625</property>
+      <property
+         name="x">416.5</property>
+   </View>
+   <View
+      id="View9">
+      <property
+         name="activityId">fileUnLoad</property>
+      <property
+         name="page">/fileUnLoad.jsf</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>fileUnLoad&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">235.5625</property>
+      <property
+         name="x">505.83105</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase10"
+      from="WildcardControlFlowRule3"
+      to="View7">
+      <property
+         name="fromOutcome">filelist</property>
+      <property
+         name="sdm:polyPoints">T43,335.5,336.04688,329.5,284.54688,B50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase11"
+      from="WildcardControlFlowRule3"
+      to="View8">
+      <property
+         name="fromOutcome">fileload</property>
+      <property
+         name="sdm:polyPoints">T57,342.5,336.04688,416.5,286.57812,B50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase12"
+      from="WildcardControlFlowRule3"
+      to="View9">
+      <property
+         name="fromOutcome">fileunload</property>
+      <property
+         name="sdm:polyPoints">R50,375.0,378.54688,505.83105,289.57812,B50</property>
    </ControlFlowCase>
 </SDM>
