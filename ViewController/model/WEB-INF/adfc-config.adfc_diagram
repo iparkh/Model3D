@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">main</property>
+      <property
+         name="page">/main.jsf</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>main&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">273.625</property>
+      <property
+         name="x">80.5</property>
+   </View>
+   <WildcardControlFlowRule
+      id="WildcardControlFlowRule3">
+      <property
+         name="activityId">*</property>
+      <property
+         name="y">378.03125</property>
+      <property
+         name="x">339.0</property>
+   </WildcardControlFlowRule>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase4"
+      from="WildcardControlFlowRule3"
+      to="View2">
+      <property
+         name="fromOutcome">main</property>
+      <property
+         name="sdm:polyPoints">L45,303.0,375.04688,121.5,273.64062,R50</property>
+   </ControlFlowCase>
+   <View
+      id="View5">
+      <property
+         name="activityId">index</property>
+      <property
+         name="page">/index.jspx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>index&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">378.5625</property>
+      <property
+         name="x">76.5</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase7"
+      from="WildcardControlFlowRule3"
+      to="View5">
+      <property
+         name="fromOutcome">index</property>
+      <property
+         name="sdm:polyPoints">L55,302.0556,382.04688,117.5,378.57812,R50</property>
+   </ControlFlowCase>
+</SDM>

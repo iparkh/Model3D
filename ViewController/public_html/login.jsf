@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="Models 3D || Login" id="d1">
+        <af:form id="f1">
+            <af:panelSplitter id="ps1" orientation="vertical" splitterPosition="250">
+                <f:facet name="first">
+                    <af:panelGroupLayout id="pgl1" layout="vertical">
+                        <af:spacer width="10" height="10" id="s3"/>
+                        <af:panelGroupLayout id="pgl2" inlineStyle="background-color:Red;" layout="vertical">
+                            <af:spacer width="10" height="10" id="s4"/>
+                            <af:image id="i1"/>
+                            <af:spacer width="10" height="10" id="s1"/>
+                            <af:outputText value="Управління системою" id="ot1"
+                                           inlineStyle="color:White; font-size:large; font-weight:bold; text-align:center;"/>
+                            <af:spacer width="10" height="10" id="s5"/>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl3" inlineStyle="background-color:#ff8484;" layout="vertical">
+                            <af:spacer width="10" height="20" id="s2"/>
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                </f:facet>
+                <f:facet name="second">
+                    <af:panelStretchLayout id="psl1">
+                        <f:facet name="bottom">
+                            <af:outputText value="Copyright @2020. All right reserved." id="ot2"/>
+                        </f:facet>
+                        <f:facet name="center">
+                            <af:panelGroupLayout id="pgl4" layout="horizontal" halign="center">
+                                <af:panelFormLayout id="pfl1" >
+                                    <f:facet name="footer">
+                                        <af:button text="Увійти" id="b1" action="#{login.loginAction}"/>
+                                    </f:facet>
+                                    <af:inputText label="Імя" id="it1" required="true"
+                                                  binding="#{login.usernameInputText}"/>
+                                    <af:inputText label="Пароль" id="it2" required="true" secret="true"
+                                                  binding="#{login.passwordInputText}"/>
+                                </af:panelFormLayout>
+                            </af:panelGroupLayout>
+                        </f:facet>
+                        <f:facet name="start"/>
+                        <f:facet name="end"/>
+                        <f:facet name="top"/>
+                    </af:panelStretchLayout>
+                </f:facet>
+            </af:panelSplitter>
+        </af:form>
+    </af:document>
+</f:view>
